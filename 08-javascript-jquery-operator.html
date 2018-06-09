@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>jQuery Calculator</title>
+
+  <!-- highlight.js -->
+  <link rel="stylesheet"
+  href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 
   <!-- Added link to the jQuery Library -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -11,6 +17,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
 </head>
+
 <body>
 
   <div class="jumbotron">
@@ -28,27 +35,65 @@
           <h3 class="card-header">Calculator</h3>
 
           <div class="card-body">
-            <button id="button-1" class="btn btn-primary number" value="1"><h1>1</h1></button>
-            <button id="button-2" class="btn btn-primary number" value="2"><h1>2</h1></button>
-            <button id="button-3" class="btn btn-primary number" value="3"><h1>3</h1></button>
-            <button id="button-plus" class="btn btn-danger operator" value="plus"><h1>+</h1></button>
-            <br><br>
-            <button id="button-4" class="btn btn-primary number" value="4"><h1>4</h1></button>
-            <button id="button-5" class="btn btn-primary number" value="5"><h1>5</h1></button>
-            <button id="button-6" class="btn btn-primary number" value="6"><h1>6</h1></button>
-            <button id="button-minus" class="btn btn-danger operator" value="minus"><h1>&minus;</h1></button>
-            <br><br>
-            <button id="button-7" class="btn btn-primary number" value="7"><h1>7</h1></button>
-            <button id="button-8" class="btn btn-primary number" value="8"><h1>8</h1></button>
-            <button id="button-9" class="btn btn-primary number" value="9"><h1>9</h1></button>
-            <button id="button-multiply" class="btn btn-danger operator" value="times"><h1>&times;</h1></button>
-            <br><br>
-            <button id="button-0" class="btn btn-primary number" value="0"><h1>0</h1></button>
-            <button id="button-divide" class="btn btn-danger operator" value="divide"><h1>&divide;</h1></button>
-            <button id="button-power" class="btn btn-danger operator" value="power"><h1>^</h1></button>
-            <button id="button-equal" class="btn btn-success equal" value="equals"><h1>=</h1></button>
-            <br><br>
-            <button id="button-clear" class="btn btn-dark clear" value="clear"><h1>clear</h1></button>
+            <button id="button-1" class="btn btn-primary number" value="1">
+              <h1>1</h1>
+            </button>
+            <button id="button-2" class="btn btn-primary number" value="2">
+              <h1>2</h1>
+            </button>
+            <button id="button-3" class="btn btn-primary number" value="3">
+              <h1>3</h1>
+            </button>
+            <button id="button-plus" class="btn btn-danger operator" value="plus">
+              <h1>+</h1>
+            </button>
+            <br>
+            <br>
+            <button id="button-4" class="btn btn-primary number" value="4">
+              <h1>4</h1>
+            </button>
+            <button id="button-5" class="btn btn-primary number" value="5">
+              <h1>5</h1>
+            </button>
+            <button id="button-6" class="btn btn-primary number" value="6">
+              <h1>6</h1>
+            </button>
+            <button id="button-minus" class="btn btn-danger operator" value="minus">
+              <h1>&minus;</h1>
+            </button>
+            <br>
+            <br>
+            <button id="button-7" class="btn btn-primary number" value="7">
+              <h1>7</h1>
+            </button>
+            <button id="button-8" class="btn btn-primary number" value="8">
+              <h1>8</h1>
+            </button>
+            <button id="button-9" class="btn btn-primary number" value="9">
+              <h1>9</h1>
+            </button>
+            <button id="button-multiply" class="btn btn-danger operator" value="times">
+              <h1>&times;</h1>
+            </button>
+            <br>
+            <br>
+            <button id="button-0" class="btn btn-primary number" value="0">
+              <h1>0</h1>
+            </button>
+            <button id="button-divide" class="btn btn-danger operator" value="divide">
+              <h1>&divide;</h1>
+            </button>
+            <button id="button-power" class="btn btn-danger operator" value="power">
+              <h1>^</h1>
+            </button>
+            <button id="button-equal" class="btn btn-success equal" value="equals">
+              <h1>=</h1>
+            </button>
+            <br>
+            <br>
+            <button id="button-clear" class="btn btn-dark clear" value="clear">
+              <h1>clear</h1>
+            </button>
           </div>
         </div>
       </div>
@@ -65,13 +110,74 @@
             <h1 id="result"></h1>
             <hr>
             <h3>Breaking down the code into bit sizes!</h3>
-                <ol>
-                    <li><a href="04-body-verbose.html">HTML / CSS / Bootstrap</a></li>
-                    <li><a href="07-javascript-jquery-number.html">NUMBER</a></li>
-                    <li><a href="08-javascript-jquery-operator.html">OPERATOR</a></li>
-                    <li><a href="09-javascript-jquery-equal.html">EQUAL</a></li>
-                    <li><a href="10-javascript-jquery-clear.html">CLEAR</a></li>
-                </ol>
+            <ol>
+              <li>
+                <strong>START</strong>
+              </li>
+              <li>
+                <a href="01-html-framework.html">HTML FRAMEWORK</a>
+              </li>
+              <li>
+                <a href="02-css-styling.html">CSS STYLING</a>
+              </li>
+              <li>
+                <a href="03-bootstrap.html">BOOTSTRAP</a>
+              </li>
+              <li>
+                <a href="04-body-verbose.html">HTML BODY VERBOSE
+                  <a>
+              </li>
+              <li>
+                <a href="05-javascript-jquery-beginning-steps.html">JavaScript-jQuery BEGINNING STEPS</a>
+              </li>
+              <li>
+                <a href="06-javascript-jquery-write-functions.html">JavaScript-jQuery WRITE FUNCTIONS</a>
+              </li>
+              <li>
+                <a href="07-javascript-jquery-number.html">NUMBER</a>
+              </li>
+              <li>
+                <a href="08-javascript-jquery-operator.html">OPERATOR</a>
+              </li>
+              <li>
+                <a href="09-javascript-jquery-equal.html">EQUAL</a>
+              </li>
+              <li>
+                <a href="10-javascript-jquery-clear.html">CLEAR</a>
+              </li>
+              <li>
+                <strong>FINISH</strong>
+              </li>
+              <li>
+                <a href="index.html">
+                  <strong>INDEX PAGE</strong>
+                </a>
+              </li>
+            </ol>
+            <hr>
+            <h3>View Code:</h3>
+            <pre><code class="html"></code>
+
+            // On operator class click: do something
+            $(".operator").on("click", function () {
+              // Check to see if a number was already chosen
+              // Or is we already ran calculation and if so exit
+              if (!firstNumber || isCalculated) {
+                return false;
+              }
+      
+              // Set isOperatorChosen to tur so we can write second number
+              isOperatorChosen == true;
+      
+              // Store off the operator
+              operator = $(this).val();
+      
+              // Set the HTML of the #operator to the text that was clicked
+              $("#operator").text($(this).text());
+            }); 
+
+          </code></pre>
+
           </div>
         </div>
       </div>
@@ -79,89 +185,88 @@
   </div>
 
   <script type="text/javascript">
-  // About to embark on the logic here!
+    // About to embark on the logic here!
 
-  //=======================================
-  // We will start by pseudocoding the logic in comments
-  //=======================================
+    //=======================================
+    // We will start by pseudocoding the logic in comments
+    //=======================================
 
-  // Here we start by creating a ready function.
-  $(document).ready(function() {
-  
+    // Here we start by creating a ready function.
+    $(document).ready(function () {
 
-  // Here we create our global variables
-  var firstNumber = 0;
-  var secondNumber = 0;
-  var operator = "";
-  var result = 0;
-  var isOperatorChosen = false;
-  var isCalculated = false;
 
-  // We will use this function to initialize our calculator
-  // It will reset when user clicks the clear button
-  function initCalc() {
-       firstNumber = "";
-       secondNumber = "";
-       operator = "";
-       isOperatorChosen = false;
-       isCalculated = false;
+      // Here we create our global variables
+      var firstNumber = 0;
+      var secondNumber = 0;
+      var operator = "";
+      var result = 0;
+      var isOperatorChosen = false;
+      var isCalculated = false;
 
-       // jQuery to set given classes empty
-       $("#first-number, #second-number;, #operator, #result").empty();
-  }
+      // We will use this function to initialize our calculator
+      // It will reset when user clicks the clear button
+      function initCalc() {
+        firstNumber = "";
+        secondNumber = "";
+        operator = "";
+        isOperatorChosen = false;
+        isCalculated = false;
 
-  // jQuery calls on click framework
-  // On number class click: do something
-  $(".number").on("click", function() {
-    // We check if we already ran calculation. If so... do this.
-    if (isCalculated) {
-        return false;
-    }
+        // jQuery to set given classes empty
+        $("#first-number, #second-number;, #operator, #result").empty();
+      }
 
-    // If operator is chose, we write secondNumber, otherwise firstNumber
-    if (isOperatorChosen) {
-         secondNumber += $(this).val();
-         $("#second-number").text(secondNumber);
-    }
-    else {
-       firstNumber += $(this).val();
-       $("#first-number").text(firstNumber);
-    }
-  });
+      // jQuery calls on click framework
+      // On number class click: do something
+      $(".number").on("click", function () {
+        // We check if we already ran calculation. If so... do this.
+        if (isCalculated) {
+          return false;
+        }
 
-  // On operator class click: do something
-  $(".operator").on("click", function() {
-    // Check to see if a number was already chosen
-    // Or is we already ran calculation and if so exit
-    if (!firstNumber || isCalculated) {
-        return false;
-    }
+        // If operator is chose, we write secondNumber, otherwise firstNumber
+        if (isOperatorChosen) {
+          secondNumber += $(this).val();
+          $("#second-number").text(secondNumber);
+        } else {
+          firstNumber += $(this).val();
+          $("#first-number").text(firstNumber);
+        }
+      });
 
-    // Set isOperatorChosen to tur so we can write second number
-    isOperatorChosen == true;
+      // On operator class click: do something
+      $(".operator").on("click", function () {
+        // Check to see if a number was already chosen
+        // Or is we already ran calculation and if so exit
+        if (!firstNumber || isCalculated) {
+          return false;
+        }
 
-    // Store off the operator
-    operator = $(this).val();
+        // Set isOperatorChosen to tur so we can write second number
+        isOperatorChosen == true;
 
-    // Set the HTML of the #operator to the text that was clicked
-    $("#operator").text($(this).text());
-  });
-   
-  // On equal class click: do something
-  $(".equal").on("click", function() {
-    //   WE WILL EXPAND THIS CODE NEXT
-  });
-  
-  // On clear class click: do something
-  $(".clear").on("click", function() {
-    //   WE WILL EXPAND THIS CODE NEXT
-  });
+        // Store off the operator
+        operator = $(this).val();
 
-  // Call the calculator app so we can set the state of the app
-  initCalc();
-  });
+        // Set the HTML of the #operator to the text that was clicked
+        $("#operator").text($(this).text());
+      });
 
+      // On equal class click: do something
+      $(".equal").on("click", function () {
+        //   WE WILL EXPAND THIS CODE NEXT
+      });
+
+      // On clear class click: do something
+      $(".clear").on("click", function () {
+        //   WE WILL EXPAND THIS CODE NEXT
+      });
+
+      // Call the calculator app so we can set the state of the app
+      initCalc();
+    });
   </script>
 
-  </body>
-  </html>
+</body>
+
+</html>
